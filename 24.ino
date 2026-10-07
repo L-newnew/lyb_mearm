@@ -493,8 +493,8 @@ void hh(double pppp[],int npppp,int ppppa[],int nppppa)//根据姿态直接改�
 
 void hhh(double p[],int np)//根据两点姿态ppppa直接算位移微量p（模式7）
 {
-  hh(ppppa[0],3,pppp[0],3);
-  hh(ppppa[1],3,pppp[1],3);
+  hh(pppp[0],3,ppppa[0],3);
+  hh(pppp[1],3,ppppa[1],3);
   double ppp[3]={0,0,0};//求位移量
   for(int i=0;i<=2;i++)
   {
